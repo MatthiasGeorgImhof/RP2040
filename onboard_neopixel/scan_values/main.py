@@ -8,4 +8,4 @@ while(True):
             for b in range(0,255,16):
                 n[0] = (g,r,b)
                 n.write()
-                time.sleep(0.05)
+#                 time.sleep(0.05)
