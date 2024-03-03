@@ -1,6 +1,6 @@
 import neopixel
 import time
-p = machine.Pin.board.GP12
+p = machine.Pin.board.GP3
 n = neopixel.NeoPixel(p,4)
 
 #is rgb
@@ -13,13 +13,13 @@ orange = (255,40,0)
 dark = (0,0,0)
 
 signals = (
-    (0.1, (white, white, red, dark)),
-    (0.1, (dark, white, red, red)),
-    (0.1, (white, white, red, dark)),
-    (0.1, (dark, white, red, red)),
+    (0.1, (white, white, red, red)),
     (0.1, (dark, white, red, dark)),
-    (1.0, (dark, white, red, dark)),
+    (0.1, (white, white, red, red)),
     (0.1, (dark, white, red, dark)),
+    (0.1, (white, white, red, red)),
+    (0.1, (dark, white, red, dark)),
+    (0.9, (white, white, red, red)),
     )
   
 while(True):

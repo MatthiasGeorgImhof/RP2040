@@ -1,6 +1,6 @@
 import neopixel
 import time
-p = machine.Pin.board.GP12
+p = machine.Pin(5, machine.Pin.OUT)
 n = neopixel.NeoPixel(p,4)
 
 #is rgb
@@ -14,7 +14,7 @@ dark = (0,0,0)
 
 n[0] = orange
 n[1] = red
-n[2] = grenn
+n[2] = green
 n[3] = blue
 
 n.write()
